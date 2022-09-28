@@ -1,0 +1,1 @@
+A link between an XML file and a Java class in GWT framework

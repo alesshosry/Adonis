@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "Aless 9/19/2022 13:08",
+	"super" : "Object",
+	"category" : "XLLDetector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"javaEntityName",
+		"javaEntityType",
+		"xmlElement"
+	],
+	"name" : "XLLGWTField",
+	"type" : "normal"
+}

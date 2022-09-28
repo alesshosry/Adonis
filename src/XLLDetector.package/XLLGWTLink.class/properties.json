@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "Aless 9/19/2022 13:07",
+	"super" : "Object",
+	"category" : "XLLDetector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"javaClassFullPath",
+		"javaClassName",
+		"uiXMLFullPath",
+		"parsedXML",
+		"fields",
+		"handlers"
+	],
+	"name" : "XLLGWTLink",
+	"type" : "normal"
+}
