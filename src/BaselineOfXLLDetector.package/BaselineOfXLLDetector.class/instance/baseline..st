@@ -1,5 +1,5 @@
 baselines
-baselineOf: spec
+baseline: spec
 	<baseline>
 	spec
 		for: #common
