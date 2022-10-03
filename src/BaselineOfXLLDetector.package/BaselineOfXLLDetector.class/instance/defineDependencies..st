@@ -3,5 +3,5 @@ defineDependencies: spec
 
 	^ spec
 		  baseline: 'MoTion'
-		  with: [ spec repository: 'github://alesshosry/MoTion' ];
+		  with: [ spec repository: 'github://AlessHosry/MoTion:main' ];
 		  yourself
