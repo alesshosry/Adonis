@@ -2,9 +2,8 @@
 
 To install XLLDetector
 
-1.	Create new Moose image
-2.	Install MoTion from https://github.com/alesshosry/MoTion
-3.	Open Moose Playground (`Ctrl+OW`) in your and execute the following Metacello script (select it and press Do-it button or `Ctrl+D`):
+1.	Create new Moose image 
+2.	Open Moose Playground (`Ctrl+OW`) in your and execute the following Metacello script (select it and press Do-it button or `Ctrl+D`):
 
 ```Smalltalk
 Metacello new
@@ -13,6 +12,22 @@ Metacello new
     load.
 ```
 
+3.	Download manually below repos on your image (until fixing the baseline to be downloaded automatically)
+	
+```Smalltalk
+Metacello new
+    baseline: 'MoTion';
+    repository: 'github://AlessHosry/MoTion:main';
+    load.
+```
+Make sure to load MoTion-Moose package after downloading it. Then:
+```Smalltalk
+Metacello new
+	baseline: 'XMLParser';
+	repository: 'github://pharo-contributions/XML-XMLParser/src';
+	load.
+```
+	
 # Usage
 
 The main purpose of XLLDetector is to detect cross languages links that exist between multiple languages in one software application developped using a specific Framework.
