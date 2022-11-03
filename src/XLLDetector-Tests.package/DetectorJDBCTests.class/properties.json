@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DetectorTests",
+	"category" : "XLLDetector-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DetectorJDBCTests",
+	"type" : "normal"
+}

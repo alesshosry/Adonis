@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "XLLDetectorJDBC",
+	"category" : "XLLDetector",
+	"classinstvars" : [
+		"xllLink"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "XLLDetectorJavaProperties",
+	"type" : "normal"
+}

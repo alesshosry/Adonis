@@ -3,5 +3,5 @@ testDetectorCreation
 	
 	|myDetector|
 	
-	myDetector := XLLDetector new. 
+	myDetector := XLLDetector new. 	
 	self assert: myDetector isNotNil 

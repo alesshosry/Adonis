@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "GeneralPatternsTests",
+	"category" : "XLLDetector-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"javaModel",
+		"fastModels",
+		"jsonTemplate"
+	],
+	"name" : "XLLGeneralJavaPatternsTests",
+	"type" : "normal"
+}
