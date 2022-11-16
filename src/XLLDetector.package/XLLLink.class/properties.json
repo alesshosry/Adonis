@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "XLLDetector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"framework",
+		"references",
+		"definitions",
+		"languageReference",
+		"languageDefinition",
+		"dependencyLink"
+	],
+	"name" : "XLLLink",
+	"type" : "normal"
+}

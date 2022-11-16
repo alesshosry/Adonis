@@ -1,4 +1,10 @@
 accessing
 detectAllLinksOfFramework: framework
 
-	self notYetImplemented.
+	| myDetector |
+	framework = 'GWT' ifFalse: [ ^ self ].
+	myDetector := XLLDetectorGWT new.
+	myDetector mainModel: self mainModel. 
+	myDetector detectLinks.
+	self detectedLinks: myDetector detectedLinks.
+	
