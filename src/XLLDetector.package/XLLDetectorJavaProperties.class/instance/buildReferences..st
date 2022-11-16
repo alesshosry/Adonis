@@ -1,18 +1,13 @@
 as yet unclassified
-buildReferences: bindings
-
+buildReferences: properties
+	
 	|references|
 	references := OrderedCollection new.
 	
-	bindings do: [ :eachBinding |  
-		references add: 
-			(Reference new
-				key: 'getProperty';
-				elementName: (eachBinding at: 'arguments');
-				yourself).		
-		].
-	
-	^ references 
-	
-
-	
+	properties ifNotEmpty: [
+		properties do: [ :eachProperty |
+			
+			references add: (self buildReferenceFor: 'getProperty' using: eachProperty ).  
+		].			
+	].
+^ references.

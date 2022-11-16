@@ -5,4 +5,4 @@ collectPropertiesReferencesNames: aPropsInvocator of: aFastModel
 	
 	generalPattern := XLLJavaPatterns new.
 	
-	^ (generalPattern defineJavaMethodInvocationWithArguments: 'getProperty' andInvocator: aPropsInvocator) collectBindings: {#arguments} for: aFastModel.
+	^ (generalPattern _defineInvocationWithArgs: 'getProperty' usingInvocator: aPropsInvocator) collectBindings: {#anyValue} for: aFastModel.

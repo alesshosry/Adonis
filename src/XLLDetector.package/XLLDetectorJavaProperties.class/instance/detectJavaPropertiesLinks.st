@@ -3,7 +3,7 @@ detectJavaPropertiesLinks
 
 	|xllLink |
 	
-	xllLink := self defineLink.
+	xllLink := super defineLink.
   
 	self mainModel allModelClasses do: [ :eachClass | 
 		

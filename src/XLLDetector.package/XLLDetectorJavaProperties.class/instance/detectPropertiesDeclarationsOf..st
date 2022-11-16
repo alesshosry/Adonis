@@ -1,7 +1,8 @@
 as yet unclassified
 detectPropertiesDeclarationsOf: aFastModel
- 
+
 	| generalPattern |
-	
-	generalPattern := XLLJavaPatterns new.	
-	^ (generalPattern defineJavaDeclStatementOnly: 'Properties') collectBinding: #anyName for: aFastModel.	
+	generalPattern := XLLJavaPatterns new.
+	^ (generalPattern _defineObjectDeclParamUsing: 'Properties')
+		  collectBinding: #anyName
+		  for: aFastModel
