@@ -4,13 +4,13 @@ testDetectLinks
 	| xllDetector |
 	xllDetector := XLLDetectorGWT new.
 	xllDetector fillMainModel: mainModel.
-	xllDetector detectLinks.
+	xllDetector detectAllLinks.
 
-	self assert: xllDetector gwtLinks size = 2.
+	self assert: xllDetector detectedLinks size = 2.
 	self assert:
-		(xllDetector gwtLinks flatCollect: [ :c | c fields ]) size = 12.
+		(xllDetector detectedLinks flatCollect: [ :c | c references ]) size = 18.
 	self assert:
-		(xllDetector gwtLinks flatCollect: [ :c | c handlers ]) size = 6.
-	self assert:
-		((xllDetector gwtLinks collect: [ :c | c javaClassName ]) indexOf:
-			 'AboutDialog') > 0
+		(xllDetector detectedLinks flatCollect: [ :c | c definitions ]) size = 18.
+	"self assert:
+		((xllDetector detectedLinks collect: [ :c | c javaClassName ]) indexOf:
+			 'AboutDialog') > 0"
