@@ -1,4 +1,0 @@
-accessing
-uiXMLFullPath
-
-	^ uiXMLFullPath
