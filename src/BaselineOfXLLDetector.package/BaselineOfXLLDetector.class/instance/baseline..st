@@ -10,5 +10,5 @@ baseline: spec
 			spec baseline: 'PostgreSQLParser' with: [ spec repository: 'github://juliendelplanque/PostgreSQLParser' ].
 			spec package: #XLLDetector.
 			spec package: #'XLLDetector-Tests' with: [ spec requires: #( 'XLLDetector' ) ].		 
-			spec group: 'default' with: #( 'XLLDetector' 'XLLDetector-Tests' 'MoTion' 'XMLParser' 'Carrefour' ). 
+			spec group: 'default' with: #( 'XLLDetector' 'XLLDetector-Tests' 'MoTion' 'PgMetadata' 'XMLParser' 'PostgreSQLParser' ). 
 		] 
