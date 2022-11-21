@@ -1,5 +1,5 @@
 as yet unclassified
-_defineJavaDeclParamType: aStmtType forSpecificDeclarator: aDeclarator
+defineJavaDeclParamType: aStmtType forSpecificDeclarator: aDeclarator
 
 	" ex:	aStmtType --> FileInputStream 
 			aDeclarator --> input

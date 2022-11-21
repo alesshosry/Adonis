@@ -1,5 +1,5 @@
 as yet unclassified
-_defineInvocationWithArgs: method usingInvocator: name
+defineInvocationWithArgs: method usingInvocator: name
 
 	^ FASTJavaModel % {    
 		#'allModelEntities' <=> FASTJavaMethodInvocation % { 

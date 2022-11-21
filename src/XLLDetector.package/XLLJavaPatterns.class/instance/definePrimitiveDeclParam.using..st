@@ -1,5 +1,5 @@
 as yet unclassified
-_definePrimitiveDeclParam: declaratorName using: type
+definePrimitiveDeclParam: declaratorName using: type
 
 	^ FASTJavaModel % {    	 
 		#'allModelEntities' <=> FASTJavaVarDeclStatement % { 

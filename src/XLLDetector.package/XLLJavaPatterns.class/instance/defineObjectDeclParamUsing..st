@@ -1,5 +1,5 @@
 as yet unclassified
-_defineObjectDeclParamUsing: type
+defineObjectDeclParamUsing: type
 
 	^ FASTJavaModel % {    	 
 		#'allModelEntities' <=> FASTJavaVarDeclStatement % { 

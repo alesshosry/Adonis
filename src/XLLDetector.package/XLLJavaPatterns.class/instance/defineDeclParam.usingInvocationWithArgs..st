@@ -1,5 +1,5 @@
 as yet unclassified
-_defineDeclParam: type usingInvocationWithArgs: method 
+defineDeclParam: type usingInvocationWithArgs: method 
 
 	^ FASTJavaModel % {  
 		#'allModelEntities' <=>  FASTJavaVarDeclStatement % { 

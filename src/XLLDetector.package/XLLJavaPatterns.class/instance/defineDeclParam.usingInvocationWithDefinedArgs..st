@@ -1,14 +1,14 @@
 as yet unclassified
-_defineDeclParamUsingDeclarator: name andInvocationWithArgs: method
-
+defineDeclParam: type usingInvocationWithDefinedArgs: method 
+	
 	^ FASTJavaModel   % {    	 
 		#'allModelEntities' <=>  FASTJavaVarDeclStatement % { 
-			#'type>typeName>name' <=> #'@anyType'.	
-			#'declarators>famixVariable>name' <=> name asSymbol. 
+			#'type>typeName>name' <=> type asSymbol	.	
+			#'declarators>famixVariable>name' <=> #'@anyDeclaratorName'. 
 			#'declarators>famixVariable>sourceAnchor>fileName' <=> #'@javaFileName'.
 			#'declarators>expression' <=> FASTJavaMethodInvocation % {  
 				#'name' <=> method asSymbol .
-				#'arguments>primitiveValue' <=> #'@anyArguments'. 	
-			}	
+				#'arguments>name' <=> #'@anyArguments'. 	
+			}.	
 		}.
 	}.
