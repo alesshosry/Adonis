@@ -6,7 +6,7 @@ detectPropertiesLocator: propsInvocator of: aFastModel
 
 	"step 1: look for (load) invocated methods"
 	pattern := XLLJavaPatterns new
-		           _defineInvocationWithDefinedArgs: 'load'
+		           defineInvocationWithDefinedArgs: 'load'
 		           usingInvocator: propsInvocator.
 
 	"step 2: get arguments"
@@ -14,7 +14,7 @@ detectPropertiesLocator: propsInvocator of: aFastModel
 
 	inputFilesDecl do: [ :eachDecl | "step 3: search for these arguments declarations if declared as FileInputStream"
 		pattern := XLLJavaPatterns new
-			           _defineJavaDeclParamType: 'FileInputStream'
+			           defineJavaDeclParamType: 'FileInputStream'
 			           forSpecificDeclarator: eachDecl.
 
 		"step 4: eaxtract file location"
