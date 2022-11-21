@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "XLLDetectorJavaSQL",
+	"category" : "XLLDetector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"definitions",
+		"references"
+	],
+	"name" : "XLLDetectorJavaSQLRefAndDef",
+	"type" : "normal"
+}

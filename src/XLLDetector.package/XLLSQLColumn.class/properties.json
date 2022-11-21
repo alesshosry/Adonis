@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "XLLDetectorSQLElements",
+	"category" : "XLLDetector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"alias"
+	],
+	"name" : "XLLSQLColumn",
+	"type" : "normal"
+}

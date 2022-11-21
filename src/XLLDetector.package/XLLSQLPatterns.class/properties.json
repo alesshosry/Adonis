@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "XLLPatterns",
+	"category" : "XLLDetector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "XLLSQLPatterns",
+	"type" : "normal"
+}
