@@ -2,9 +2,9 @@ accessing
 detectAllLinksOfFramework: framework
 
 	| myDetector |
-	framework = 'GWT' ifFalse: [ ^ self ].
-	myDetector := XLLDetectorGWT new.
-	myDetector mainModel: self mainModel. 
-	myDetector detectLinks.
-	self detectedLinks: myDetector detectedLinks.
+	framework = 'GWT' ifTrue: [  myDetector := XLLDetectorGWT new ].
+	framework = 'JDBC' ifTrue: [  myDetector := XLLDetectorJDBC new ]. 
+	myDetector mainModel: self mainModel.
+	
+	self detectedLinks: myDetector detectAllLinks detectedLinks .
 	

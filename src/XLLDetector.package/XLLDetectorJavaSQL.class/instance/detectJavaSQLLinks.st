@@ -27,6 +27,5 @@ detectJavaSQLLinks
 		].	 
 	].
 
-self halt.
 	
 	 
