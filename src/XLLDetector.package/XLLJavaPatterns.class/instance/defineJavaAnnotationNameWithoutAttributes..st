@@ -11,6 +11,6 @@ defineJavaAnnotationNameWithoutAttributes: aName
 			#'annotatedEntity>name' <=> #'@EntityName'. 
 			#'annotatedEntity>parentType>name' <=> #'@ClassName'.
 			#'annotatedEntity>sourceAnchor>fileName' <=> #'@FileName'.
-		}.
+		} as: 'annotatedAttribute'.
 	}.
 }.

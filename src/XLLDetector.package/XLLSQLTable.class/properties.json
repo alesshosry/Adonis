@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "XLLDetectorSQLElements",
-	"category" : "XLLDetector",
+	"category" : "XLLDetector-SQL",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

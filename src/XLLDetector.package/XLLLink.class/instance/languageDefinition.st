@@ -1,4 +1,0 @@
-accessing
-languageDefinition
-
-	^ languageDefinition

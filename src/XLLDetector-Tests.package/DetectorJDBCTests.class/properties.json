@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"mainModel"
+	],
 	"name" : "DetectorJDBCTests",
 	"type" : "normal"
 }

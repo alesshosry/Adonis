@@ -13,6 +13,6 @@ defineJavaAnnotationNameWithAttributes: aName
 			#'annotatedEntity>parentType>name' <=> #'@ClassName'.
 			"#'declaredType>name' <=> #'@EntityType'."
 			#'annotatedEntity>sourceAnchor>fileName' <=> #'@FileName'.
-		}.
+		} as: 'annotatedAttribute'.
 	}.
 }.

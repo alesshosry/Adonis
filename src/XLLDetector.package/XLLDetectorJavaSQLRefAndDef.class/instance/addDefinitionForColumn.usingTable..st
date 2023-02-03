@@ -20,7 +20,7 @@ addDefinitionForColumn: cdentifier usingTable: tdentifier
 		ifNotEmpty: [ 
 			defs := OrderedCollection new.
 			results do: [ :eachResult |
-					defs add: (self buildDefinitionFor: eachResult  using: cdentifier)
+					defs add: (self buildForeignEntityFor: eachResult  using: cdentifier)
 				].
 			^ defs  ] 
-		ifEmpty: [ ^ {self buildDefinitionFor: 'N/A' using: cdentifier} ]
+		ifEmpty: [ ^ {self buildForeignEntityFor: 'N/A' using: cdentifier} ]

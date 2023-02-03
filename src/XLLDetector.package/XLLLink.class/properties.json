@@ -11,7 +11,8 @@
 		"definitions",
 		"languageReference",
 		"languageDefinition",
-		"dependencyLink"
+		"dependencyLink",
+		"association"
 	],
 	"name" : "XLLLink",
 	"type" : "normal"

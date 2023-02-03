@@ -6,11 +6,11 @@ testDetectLinks
 	xllDetector fillMainModel: mainModel.
 	xllDetector detectAllLinks.
 
-	self assert: xllDetector detectedLinks size = 2.
+	self assert: xllDetector detectedLinks size equals: 18.
 	self assert:
-		(xllDetector detectedLinks flatCollect: [ :c | c references ]) size = 18.
+		(xllDetector detectedLinks flatCollect: [ :c | c references ]) size equals: 18.
 	self assert:
-		(xllDetector detectedLinks flatCollect: [ :c | c definitions ]) size = 18.
+		(xllDetector detectedLinks flatCollect: [ :c | c definitions ]) size equals: 18.
 	"self assert:
 		((xllDetector detectedLinks collect: [ :c | c javaClassName ]) indexOf:
 			 'AboutDialog') > 0"
