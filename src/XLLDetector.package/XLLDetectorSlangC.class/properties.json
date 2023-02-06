@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "XLLDetector",
+	"category" : "XLLDetector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "XLLDetectorSlangC",
+	"type" : "normal"
+}

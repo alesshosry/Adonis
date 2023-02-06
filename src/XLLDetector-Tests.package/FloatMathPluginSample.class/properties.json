@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "XLLDetector-Tests-codeSample",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"interpreterProxy"
+	],
+	"name" : "FloatMathPluginSample",
+	"type" : "normal"
+}

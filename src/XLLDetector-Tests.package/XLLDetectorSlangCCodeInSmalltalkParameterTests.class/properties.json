@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DetectorTests",
+	"category" : "XLLDetector-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"detector"
+	],
+	"name" : "XLLDetectorSlangCCodeInSmalltalkParameterTests",
+	"type" : "normal"
+}
