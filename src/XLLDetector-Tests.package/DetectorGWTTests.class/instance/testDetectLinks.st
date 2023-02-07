@@ -7,10 +7,8 @@ testDetectLinks
 	xllDetector detectAllLinks.
 
 	self assert: xllDetector detectedLinks size equals: 18.
-	self assert:
-		(xllDetector detectedLinks flatCollect: [ :c | c references ]) size equals: 18.
-	self assert:
-		(xllDetector detectedLinks flatCollect: [ :c | c definitions ]) size equals: 18.
-	"self assert:
-		((xllDetector detectedLinks collect: [ :c | c javaClassName ]) indexOf:
-			 'AboutDialog') > 0"
+	self assert: xllDetector detectedLinks anyOne hostEntity isNotNil .
+	self assert: xllDetector detectedLinks anyOne foreignEntity isNotNil .
+	self assert: xllDetector detectedLinks anyOne hostEntity isNotNil .
+	self assert: xllDetector detectedLinks anyOne foreignEntity  element className equals: 'XMLAttribute' .
+	self assert: xllDetector detectedLinks anyOne hostLanguage equals: 'Java' .

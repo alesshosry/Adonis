@@ -6,7 +6,6 @@ testAnnotations
 	xllDetector fillMainModel: mainModel.
 	bindings := xllDetector collectBindingsfromJavaClasses .
 	annotations := OrderedCollection new.
-	
 	bindings do: [ :eachBindingDict |
 		annotations add: (eachBindingDict at: #annotationKey).
 	].
