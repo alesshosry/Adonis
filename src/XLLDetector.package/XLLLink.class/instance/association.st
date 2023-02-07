@@ -1,4 +1,0 @@
-accessing
-association
-
-	^ association

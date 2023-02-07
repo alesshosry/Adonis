@@ -7,12 +7,11 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"framework",
-		"references",
-		"definitions",
-		"languageReference",
-		"languageDefinition",
 		"dependencyLink",
-		"association"
+		"hostLanguage",
+		"foreignLanguage",
+		"foreignEntity",
+		"hostEntity"
 	],
 	"name" : "XLLLink",
 	"type" : "normal"
