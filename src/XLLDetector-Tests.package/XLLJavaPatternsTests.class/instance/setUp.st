@@ -19,9 +19,5 @@ setUp
 	].	
 	
 	xllGWTTestObject := XLLGWTTestObject new.
-	
-   xllGWTTestObject generateFile: 'HelloGWTWidget.ui.xml' andFillData: (xllGWTTestObject xmlTemplate). 
-	xllGWTTestObject generateFile: 'AboutDialog.ui.xml' andFillData: (xllGWTTestObject xmlTemplate2). 
-	
 	mainGWTModel := xllGWTTestObject generateMooseModelFromMSE.	
 	
