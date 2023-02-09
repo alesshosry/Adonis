@@ -6,7 +6,7 @@ testDefineJavaDeclStatementForMethod
 	pattern := XLLJavaPatterns new 
 					defineJavaDeclStatement: '@anyStatementType' forMethod: '@anyMethod'. 
 	
-	fastModels do: [ :eachFastModel |  
-		matches := pattern match: eachFastModel.
+	fastJDBCModel do: [ :eachFastClass |   
+		matches := pattern match: eachFastClass .
 		self assert: matches isMatch.		   
 	].

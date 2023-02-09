@@ -1,18 +1,27 @@
 initialization
 setUp 
 
-	super setUp .
+	| xllJDBCTestObject xllGWTTestObject |
 	
-	super generateFile: 'connectionDemo.java' andFillData: self connectionDemoTemplate . 
-	super generateFile: 'increaseSalariesForDepartment.java' andFillData: self increaseSalariesForDepartmentTemplate . 
-	super generateFile: 'jdbcDelete.java' andFillData: self jdbcDeleteTemplate . 
-		
-	javaModel := FamixJavaModel new. 
-	javaModel importFromJSONStream: (self jsonTemplate) readStream. 
-	javaModel rootFolder: '/Users/aless/Documents/Work and Papers/Java/JDBC_Variety_Of_Examples_Reduced' asFileReference .  "!!!!! Temporaire"
-	"javaModel rootFolder: Smalltalk imageDirectory fullName."
-	fastModels := OrderedCollection new.
-	javaModel allModelClasses do: [ :eachClass | 
-		fastModels add: eachClass generateFastAndBind.	
-	].
+	super setUp .
+	 
+	xllJDBCTestObject := XLLJDBCTestObject  new. 
+	
+	xllJDBCTestObject generateFile: 'demo.properties' andFillData: (xllJDBCTestObject propertiesTemplate ).   
+	xllJDBCTestObject generateFile: 'JdbcDelete.java' andFillData: (xllJDBCTestObject jdbcDeleteTemplate  ).   
+	xllJDBCTestObject generateFile: 'ConnectionDemo.java' andFillData: (xllJDBCTestObject connectionDemoTemplate  ).   
+	xllJDBCTestObject generateFile: 'IncreaseSalariesForDepartment.java' andFillData: (xllJDBCTestObject increaseSalariesForDepartmentTemplate ).   
+	
+	mainJDBCModel := xllJDBCTestObject generateMooseModelFromJSON .
+	
+	fastJDBCModel := mainJDBCModel allModelClasses collect: [ :eachClass |
+		eachClass generateFastAndBind.		
+	].	
+	
+	xllGWTTestObject := XLLGWTTestObject new.
+	
+   xllGWTTestObject generateFile: 'HelloGWTWidget.ui.xml' andFillData: (xllGWTTestObject xmlTemplate). 
+	xllGWTTestObject generateFile: 'AboutDialog.ui.xml' andFillData: (xllGWTTestObject xmlTemplate2). 
+	
+	mainGWTModel := xllGWTTestObject generateMooseModelFromMSE.	
 	

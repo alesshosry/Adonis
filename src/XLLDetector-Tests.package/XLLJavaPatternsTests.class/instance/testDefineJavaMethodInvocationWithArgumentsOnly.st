@@ -4,9 +4,10 @@ testDefineJavaMethodInvocationWithArgumentsOnly
 	| pattern matches aClass aFastModel methods |
 
 	pattern := XLLJavaPatterns new 
-					defineJavaMethodInvocationWithArgumentsOnly: '@aMethodName' asSymbol . 
+					defineInvocationWithArgs: '@aMethodName' usingInvocator: '@anyName'  asSymbol . 
+ 
+	aClass := mainJDBCModel detect: [ :eachClass | eachClass name = 'JdbcDelete' ].
 	
-	aClass := javaModel allModelClasses detect: [ :eachClass | eachClass name = 'JdbcDelete' ].
 	aFastModel := aClass generateFastAndBind .
 	
 	matches := (pattern match: aFastModel).	

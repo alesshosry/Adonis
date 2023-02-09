@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"javaModel",
-		"fastModels",
-		"jsonTemplate"
+		"mainJDBCModel",
+		"fastJDBCModel",
+		"mainGWTModel"
 	],
 	"name" : "XLLJavaPatternsTests",
 	"type" : "normal"
