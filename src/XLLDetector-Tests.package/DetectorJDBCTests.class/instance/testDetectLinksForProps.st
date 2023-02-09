@@ -4,9 +4,9 @@ testDetectLinksForProps
 	|xllDetector aLink |
 	
 	xllDetector := XLLDetectorJavaProperties new.
-	xllDetector fillMainModel: mainModel.
-	xllDetector detectJavaPropertiesLinks.
+	xllDetector fillMainModel: mainModel. 
 	
+	xllDetector detectAllLinks.
 	self assert: xllDetector detectedLinks isNotNil.
 	
 	aLink := xllDetector detectedLinks detect: [ :eachLink | eachLink hostEntity elementName = 'password' ] ifNone: [self fail ].
