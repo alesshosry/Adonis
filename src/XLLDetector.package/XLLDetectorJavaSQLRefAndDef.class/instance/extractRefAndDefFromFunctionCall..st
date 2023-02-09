@@ -9,8 +9,8 @@ extractRefAndDefFromFunctionCall: aParsedQuery
 						  asOrderedCollection .
 	results 
 		ifEmpty: [ definitions add: (self
-			 buildForeignEntityFor: 'N/A' 
-			 using: aParsedQuery)]
+			 buildForeignEntityFor: 'N/A' "
+			 using: aParsedQuery")]
 		ifNotEmpty: [ definitions add: (self
-			 buildForeignEntityFor: results first 
-			 using: aParsedQuery) ].
+			 buildForeignEntityFor: results first "
+			 using: aParsedQuery") ].

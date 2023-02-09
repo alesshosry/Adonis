@@ -10,5 +10,5 @@ detectForeignEntity: aHostEntity
 	"match here with nodes and extract XML elemnt + build definition and return."
 	xmlBinding ifNil: [ ^ nil].
 	
-	^ self buildForeignEntityFor: xmlBinding  using: xmlBinding
+	^ self buildForeignEntityFor: xmlBinding
 	

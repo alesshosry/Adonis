@@ -1,5 +1,5 @@
 as yet unclassified
-buildForeignEntityFor: element using: name
+buildForeignEntityFor: element  
 
 	^ ForeignEntity new 
 			 element: element;
