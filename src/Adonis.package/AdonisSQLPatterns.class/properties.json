@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "AdonisPatterns",
+	"category" : "Adonis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AdonisSQLPatterns",
+	"type" : "normal"
+}

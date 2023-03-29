@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "GeneralPatternsTests",
+	"category" : "Adonis-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"mainJDBCModel",
+		"fastJDBCModel",
+		"mainGWTModel"
+	],
+	"name" : "AdonisJavaPatternsTests",
+	"type" : "normal"
+}

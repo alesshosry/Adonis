@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "Aless 11/24/2022 10:16",
+	"super" : "Object",
+	"category" : "Adonis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"framework",
+		"dependencyLink",
+		"hostLanguage",
+		"foreignLanguage",
+		"foreignEntity",
+		"hostEntity"
+	],
+	"name" : "AdonisLink",
+	"type" : "normal"
+}

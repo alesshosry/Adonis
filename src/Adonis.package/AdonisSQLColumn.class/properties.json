@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "AdonisSQLElements",
+	"category" : "Adonis-SQL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"alias"
+	],
+	"name" : "AdonisSQLColumn",
+	"type" : "normal"
+}
