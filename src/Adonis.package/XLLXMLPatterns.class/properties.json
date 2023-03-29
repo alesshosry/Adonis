@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "XLLPatterns",
+	"category" : "Adonis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "XLLXMLPatterns",
+	"type" : "normal"
+}

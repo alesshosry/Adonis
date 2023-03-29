@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DetectorTests",
+	"category" : "Adonis-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"xllJDBCTestObject",
+		"mainModel"
+	],
+	"name" : "DetectorJDBCTests",
+	"type" : "normal"
+}

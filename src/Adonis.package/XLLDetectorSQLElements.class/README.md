@@ -1,0 +1,1 @@
+Since the SQL parser we're using is representing the SQL columns and tables in a complex architecture, we decided to create objects (column and table) exclusively for the detector.

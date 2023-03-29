@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GeneralPatternsTests",
+	"category" : "Adonis-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"xmlTemplate"
+	],
+	"name" : "XLLGeneralXMLPatternsTests",
+	"type" : "normal"
+}

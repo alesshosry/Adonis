@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "XLLDetectorSQLElements",
+	"category" : "Adonis-SQL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"alias"
+	],
+	"name" : "XLLSQLTable",
+	"type" : "normal"
+}

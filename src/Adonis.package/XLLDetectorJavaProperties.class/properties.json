@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "Aless 11/3/2022 14:54",
+	"super" : "XLLDetectorJDBC",
+	"category" : "Adonis",
+	"classinstvars" : [
+		"xllLink"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "XLLDetectorJavaProperties",
+	"type" : "normal"
+}
