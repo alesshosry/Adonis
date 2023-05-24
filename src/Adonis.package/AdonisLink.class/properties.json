@@ -8,10 +8,10 @@
 	"instvars" : [
 		"framework",
 		"dependencyLink",
-		"hostLanguage",
-		"foreignLanguage",
-		"foreignEntity",
-		"hostEntity"
+		"resourceEntity",
+		"resourceLanguage",
+		"referenceEntity",
+		"referenceLanguage"
 	],
 	"name" : "AdonisLink",
 	"type" : "normal"

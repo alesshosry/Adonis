@@ -5,13 +5,13 @@ testDetectForeignEntity
 	xllDetector := AdonisJavaProperties new.
 	xllDetector fillMainModel: mainModel.
 	
-   hostEntity := HostEntity new 
+   hostEntity := ReferenceEntity new
 						elementName: 'user';
 						key: 'getProperty'; 
 						path: (Smalltalk imageDirectory asFileReference / 'demo.properties') asFileReference ;
 						yourself.
 					
-	foreignEntity := xllDetector detectForeignEntity: hostEntity .
+	foreignEntity := xllDetector detectResourceEntity: hostEntity .
 	
 	self assert: foreignEntity isNotNil.
 	self assert: foreignEntity element class equals: ByteString. 

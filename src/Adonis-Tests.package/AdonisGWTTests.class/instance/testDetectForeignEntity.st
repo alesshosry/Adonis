@@ -6,13 +6,13 @@ testDetectForeignEntity
 	xllDetector := AdonisGWT new.
 	xllDetector fillMainModel: mainModel.
 	
-   hostEntity := HostEntity new 
+   hostEntity := ReferenceEntity new
 						elementName: 'greetingLabel';
 						key: 'UiField'; 
 						path: (Smalltalk imageDirectory asFileReference / 'HelloGWTWidget.ui.xml') asFileReference ;
 						yourself.
 	
-	foreignEntity := xllDetector detectForeignEntity: hostEntity .
+	foreignEntity := xllDetector detectResourceEntity: hostEntity .
 	
 	self assert: foreignEntity isNotNil.
 	self assert: foreignEntity element class equals: XMLAttribute .

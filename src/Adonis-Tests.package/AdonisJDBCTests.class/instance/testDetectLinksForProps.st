@@ -9,12 +9,12 @@ testDetectLinksForProps
 	xllDetector detectAllLinks.
 	self assert: xllDetector detectedLinks isNotNil.
 	
-	aLink := xllDetector detectedLinks detect: [ :eachLink | eachLink hostEntity elementName = 'password' ] ifNone: [self fail ].
+	aLink := xllDetector detectedLinks detect: [ :eachLink | eachLink referenceEntity elementName = 'password' ] ifNone: [self fail ].
 
-	self assert: aLink foreignEntity isNotNil .
-	self assert: aLink hostEntity isNotNil .
-	self assert: aLink foreignLanguage isNotNil . 
-	self assert: aLink hostLanguage isNotNil . 
+	self assert: aLink resourceEntity isNotNil .
+	self assert: aLink referenceEntity isNotNil .
+	self assert: aLink resourceLanguage isNotNil . 
+	self assert: aLink referenceLanguage isNotNil . 
 	self assert: aLink framework isNotNil . 
 	
 	

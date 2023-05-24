@@ -3,14 +3,14 @@ extractRefAndDefFromFunctionCall: aParsedQuery
 
 	| results |
 	
-	references add: (self buildHostEntityFor: 'call' using: aParsedQuery).
+	references add: (self buildReferenceEntityFor: 'call' using: aParsedQuery).
 	results := (self metadata getFunctions select:
 					  [ :eachFunction | eachFunction name = aParsedQuery ])
 						  asOrderedCollection .
 	results 
 		ifEmpty: [ definitions add: (self
-			 buildForeignEntityFor: 'N/A' "
+			 buildResourceEntityFor: 'N/A' "
 			 using: aParsedQuery")]
 		ifNotEmpty: [ definitions add: (self
-			 buildForeignEntityFor: results first "
+			 buildResourceEntityFor: results first "
 			 using: aParsedQuery") ].

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Adonis",
+	"category" : "Adonis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"clientModel"
+	],
+	"name" : "AdonisRMI",
+	"type" : "normal"
+}

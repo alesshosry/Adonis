@@ -1,6 +1,6 @@
 as yet unclassified
 getLink: hostEntity 
 	^self defineLink
-		hostEntity: hostEntity;
-	   foreignEntity: (self detectForeignEntity: hostEntity );
+		referenceEntity: hostEntity;
+	   resourceEntity: (self detectResourceEntity: hostEntity );
 	yourself .
