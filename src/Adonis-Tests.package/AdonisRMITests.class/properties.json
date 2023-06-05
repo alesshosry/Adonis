@@ -6,9 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"adonisRMITestObject",
 		"mainModel",
-		"adonisGWTTestObject"
+		"clientModel"
 	],
-	"name" : "AdonisGWTTests",
+	"name" : "AdonisRMITests",
 	"type" : "normal"
 }

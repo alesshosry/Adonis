@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"xllJDBCTestObject",
-		"mainModel"
+		"mainModel",
+		"adonisJDBCTestObject"
 	],
 	"name" : "AdonisJDBCTests",
 	"type" : "normal"

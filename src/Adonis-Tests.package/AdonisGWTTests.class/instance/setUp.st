@@ -3,12 +3,12 @@ setUp
 
 	super setUp.
 	
-	xllGWTTestObject := AdonisGWTTestObject  new. 
+	adonisGWTTestObject := AdonisGWTTestObject  new. 
 	
-	xllGWTTestObject generateFile: 'HelloGWTWidget.ui.xml' andFillData: (xllGWTTestObject xmlTemplate). 
-	xllGWTTestObject generateFile: 'AboutDialog.ui.xml' andFillData: (xllGWTTestObject xmlTemplate2). 
+	adonisGWTTestObject generateFile: 'HelloGWTWidget.ui.xml' andFillData: (adonisGWTTestObject xmlTemplate). 
+	adonisGWTTestObject generateFile: 'AboutDialog.ui.xml' andFillData: (adonisGWTTestObject xmlTemplate2). 
 	
-	mainModel  := xllGWTTestObject generateMooseModelFromMSE.	
+	mainModel  := adonisGWTTestObject generateMooseModelFromMSE.	
 	
 	
 	

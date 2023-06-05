@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "AdonisTests",
+	"super" : "Object",
 	"category" : "Adonis-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"mainModel",
-		"adonisGWTTestObject"
-	],
-	"name" : "AdonisGWTTests",
+	"instvars" : [ ],
+	"name" : "AdonisRMITestObject",
 	"type" : "normal"
 }

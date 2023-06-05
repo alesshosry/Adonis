@@ -1,0 +1,4 @@
+tests
+testDetectLinks
+
+	self notImplemented 

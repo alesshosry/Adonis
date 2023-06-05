@@ -3,12 +3,12 @@ setUp
 	
 	super setUp.
 	
-	xllJDBCTestObject := AdonisJDBCTestObject  new. 
+	adonisJDBCTestObject := AdonisJDBCTestObject  new. 
 	
-	xllJDBCTestObject generateFile: 'demo.properties' andFillData: (xllJDBCTestObject propertiesTemplate ).   
-	xllJDBCTestObject generateFile: 'JdbcDelete.java' andFillData: (xllJDBCTestObject jdbcDeleteTemplate  ).   
-	xllJDBCTestObject generateFile: 'ConnectionDemo.java' andFillData: (xllJDBCTestObject connectionDemoTemplate  ).   
-	xllJDBCTestObject generateFile: 'IncreaseSalariesForDepartment.java' andFillData: (xllJDBCTestObject increaseSalariesForDepartmentTemplate ).   
+	adonisJDBCTestObject generateFile: 'demo.properties' andFillData: (adonisJDBCTestObject propertiesTemplate ).   
+	adonisJDBCTestObject generateFile: 'JdbcDelete.java' andFillData: (adonisJDBCTestObject jdbcDeleteTemplate  ).   
+	adonisJDBCTestObject generateFile: 'ConnectionDemo.java' andFillData: (adonisJDBCTestObject connectionDemoTemplate  ).   
+	adonisJDBCTestObject generateFile: 'IncreaseSalariesForDepartment.java' andFillData: (adonisJDBCTestObject increaseSalariesForDepartmentTemplate ).   
 	
-	mainModel := xllJDBCTestObject generateMooseModelFromJSON .	
+	mainModel := adonisJDBCTestObject generateMooseModelFromJSON .	
 	
