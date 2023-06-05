@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "AdonisTestObject",
+	"super" : "Object",
 	"category" : "Adonis-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "AdonisJDBCTestObject",
+	"name" : "AdonisTestObject",
 	"type" : "normal"
 }
