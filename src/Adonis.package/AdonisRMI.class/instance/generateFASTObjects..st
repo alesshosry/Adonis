@@ -5,7 +5,7 @@ generateFASTObjects: anObject
 	
 	objectsFAST := OrderedCollection new.
 	(anObject allModelClasses select: [ :eachClass | 
-		 eachClass isInnerClass = false ]) do: 
+		 eachClass isInnerClass  = false ]) do: 
 			[ :each | 
 				| f |
 				f := each generateFastAndBind.

@@ -8,6 +8,6 @@ collectInheritancesFromRemote
 	bindings := OrderedCollection new.
 	 
 	javaPattern := AdonisJavaPatterns new defineJavaInheritanceFor: 'Remote'.
-	bindings addAll: (javaPattern collectBindings: { #FamixJavaInterface. } for: mainModel) . 
+	bindings addAll: (javaPattern collectBindings: { #FamixJavaInterface} for: mainModel) . 
 	  
 	^ bindings. 

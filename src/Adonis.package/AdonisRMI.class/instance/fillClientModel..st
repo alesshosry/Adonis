@@ -1,4 +1,4 @@
 accessing
-clientModel: anObject
+fillClientModel: anObject
 
 	clientModel := self generateFASTObjects: anObject

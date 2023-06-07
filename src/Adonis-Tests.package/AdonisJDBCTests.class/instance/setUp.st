@@ -10,5 +10,5 @@ setUp
 	adonisJDBCTestObject generateFile: 'ConnectionDemo.java' andFillData: (adonisJDBCTestObject connectionDemoTemplate  ).   
 	adonisJDBCTestObject generateFile: 'IncreaseSalariesForDepartment.java' andFillData: (adonisJDBCTestObject increaseSalariesForDepartmentTemplate ).   
 	
-	mainModel := adonisJDBCTestObject generateMooseModelFromJSON .	
+	mainModel := adonisJDBCTestObject generateMooseModelFromJSONFor:adonisJDBCTestObject jsonTemplate.	
 	

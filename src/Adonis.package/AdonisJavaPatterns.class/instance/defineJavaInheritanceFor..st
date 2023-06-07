@@ -5,6 +5,7 @@ defineJavaInheritanceFor: superInterfaceName
 	 #'allTypes>_' <=>  FamixJavaInterface % { 
 		"#'isInterface' <=> true."
 		#'superInheritances>superclass*>name' <=> superInterfaceName .
+		#'isStub' <~=> true.
 		"#'name' <=> #'@ServerClassName'"
 	} as: 'FamixJavaInterface'  .
 }.

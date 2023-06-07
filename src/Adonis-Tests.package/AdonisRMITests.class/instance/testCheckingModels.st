@@ -1,4 +1,0 @@
-tests
-testCheckingModels
-
-	self notImplemented 

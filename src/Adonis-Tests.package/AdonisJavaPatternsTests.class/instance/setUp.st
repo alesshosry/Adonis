@@ -12,12 +12,12 @@ setUp
 	xllJDBCTestObject generateFile: 'ConnectionDemo.java' andFillData: (xllJDBCTestObject connectionDemoTemplate  ).   
 	xllJDBCTestObject generateFile: 'IncreaseSalariesForDepartment.java' andFillData: (xllJDBCTestObject increaseSalariesForDepartmentTemplate ).   
 	
-	mainJDBCModel := xllJDBCTestObject generateMooseModelFromJSON .
+	mainJDBCModel := xllJDBCTestObject generateMooseModelFromJSONFor: xllJDBCTestObject jsonTemplate .
 	
 	fastJDBCModel := mainJDBCModel allModelClasses collect: [ :eachClass |
 		eachClass generateFastAndBind.		
 	].	
 	
 	xllGWTTestObject := AdonisGWTTestObject new.
-	mainGWTModel := xllGWTTestObject generateMooseModelFromMSE.	
+	mainGWTModel := xllGWTTestObject generateMooseModelFromMSEFor: xllGWTTestObject mseTemplate.
 	
