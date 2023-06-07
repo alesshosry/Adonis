@@ -12,7 +12,7 @@ testXMLPatternDetectionBasedOnAttributeName
 	matches := pattern match: nodes.
 	
 	self assert: matches isMatch.
-	self assert: matches matchingContexts size = 4.
+	self assert: matches matchingContexts size equals: 4.
 
 	
 	

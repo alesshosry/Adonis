@@ -10,4 +10,4 @@ testDefineXMLPatternWithoutAttribute
 	matches := pattern match: nodes.
 	
 	self assert: matches isMatch.
-	self assert: matches matchingContexts size = 11.
+	self assert: matches matchingContexts size equals: 11.

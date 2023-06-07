@@ -6,5 +6,4 @@ testDetectLinks
 	xllDetector fillMainModel: mainModel.	
 	xllDetector fillClientModel: clientModel.
 	xllDetector detectAllLinks.
-
-	self assert: xllDetector detectedLinks size = 2.
+	self assert: xllDetector detectedLinks size equals: 2.

@@ -6,4 +6,4 @@ testRemoteInheritance
 	xllDetector fillMainModel: mainModel.
 
 	self assert: xllDetector mainModel isNotNil. 
-	self assert: (xllDetector mainModel allInheritanceDefinitions select: [ :each | each superclass name = 'Remote' ]) size > 0.
+	self assert: (xllDetector mainModel allInheritanceDefinitions select: [ :each | each superclass name = 'Remote' ]) isNotEmpty .
