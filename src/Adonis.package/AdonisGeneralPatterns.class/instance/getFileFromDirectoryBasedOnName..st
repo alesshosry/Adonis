@@ -6,6 +6,6 @@ getFileFromDirectoryBasedOnName: aFileName
 ^ FileReference % { 
 	#'children*' <=> FileReference %{
 		#isFile <=> true.
-		#basename <=> aFileName asString .
+		#basename <=> aFileName asSymbol  .
 	}as: 'myFile'
  }.
