@@ -13,6 +13,6 @@ getReferenceContainers: resourceEntity
 			r := pattern
 				     collectBindings: { #myLiteralString. #methodName }
 				     for: each.
-			r ifNotEmpty: [ bindings add: r ] ] ].
+			r ifNotEmpty: [  r do: [ :eachR | eachR at: 'className' put: c name ] . bindings add: r ] ] ].
 
 	^ bindings
