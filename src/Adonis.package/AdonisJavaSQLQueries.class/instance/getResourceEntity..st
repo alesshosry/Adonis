@@ -1,4 +1,4 @@
 as yet unclassified
-getResourceEntity: aResourceContainer 
+getResourceEntity: aResourceContainer
 
 	^ self buildResourceEntityFor: aResourceContainer  
