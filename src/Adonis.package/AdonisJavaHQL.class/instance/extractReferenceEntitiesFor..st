@@ -1,5 +1,5 @@
 as yet unclassified
-extractResourceEntitiesFor: eachResourceContainer
+extractReferenceEntitiesFor: eachReferenceContainer
 
 	| pattern |
 	pattern := AdonisXMLPatterns new.
@@ -9,4 +9,4 @@ extractResourceEntitiesFor: eachResourceContainer
 		   attributeName1: 'table'
 		   attributeName2: 'name')
 		  collectBindings: { #attributeValue1. #attributeValue2. #myXMLElement }
-		  for: eachResourceContainer
+		  for: eachReferenceContainer

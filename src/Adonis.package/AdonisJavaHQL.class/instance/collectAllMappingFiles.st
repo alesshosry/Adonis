@@ -8,4 +8,5 @@ collectAllMappingFiles
 	^  (pattern
 			    collectBindings: { #myFile }
 			    for: self mainModel rootFolder) collect: [ :each |
-			   self parseXMLResourceFile: (each at: 'myFile') ] 
+			   		each at: 'myFile' ] 
+	 

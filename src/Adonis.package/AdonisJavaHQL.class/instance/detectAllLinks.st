@@ -1,8 +1,8 @@
 as yet unclassified
 detectAllLinks
- 	self getResourceContainers do: [ :eachResourceContainer | 
-			(self getResourceEntities:  eachResourceContainer )
-				collect: [ :eachResourceEntity |
-					self detectedLinks addAll: (self getLink: eachResourceEntity ).
+ 	self getReferenceContainers do: [ :eachReferenceContainer | 
+			(self getReferenceEntities: eachReferenceContainer )
+				collect: [ :eachReferenceEntity |
+					self detectedLinks addAll: (self getLink: eachReferenceEntity ).
 				 ]. 
 		].

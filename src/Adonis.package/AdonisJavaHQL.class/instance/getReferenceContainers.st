@@ -1,4 +1,4 @@
 as yet unclassified
-getResourceContainers 
+getReferenceContainers 
  
 	^ self collectAllMappingFiles

@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "AdonisJavaHibernate",
+	"super" : "Adonis",
 	"category" : "Adonis",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "AdonisJavaHQL",
+	"name" : "AdonisJavaHibernate",
 	"type" : "normal"
 }

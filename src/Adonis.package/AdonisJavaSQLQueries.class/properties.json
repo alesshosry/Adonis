@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "AdonisJavaHQL",
+	"instvars" : [
+		"fastEntities"
+	],
+	"name" : "AdonisJavaSQLQueries",
 	"type" : "normal"
 }
