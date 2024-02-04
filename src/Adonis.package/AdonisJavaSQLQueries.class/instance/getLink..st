@@ -1,7 +1,14 @@
 as yet unclassified
 getLink: referenceEntity 
 	
-	^self defineLink
+"	^self defineLink
 		referenceEntity: referenceEntity;
 	   resourceEntity: (self detectResourceEntity: referenceEntity );
-	yourself .
+	yourself ."
+	
+^ (self detectResourceEntities: referenceEntity) collect: [ :each |
+		
+		  self defineLink
+			  referenceEntity: referenceEntity ;
+			  resourceEntity: each ;
+			  yourself ]

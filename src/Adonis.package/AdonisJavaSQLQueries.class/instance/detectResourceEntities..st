@@ -1,6 +1,5 @@
 private - running
-detectResourceEntity: referenceEntity
-
+detectResourceEntities: referenceEntity
 	^ (self getResourceContainers: referenceEntity) flattened collect: [
 		  :eachResourceContainer |
 		  		self getResourceEntity: eachResourceContainer ]

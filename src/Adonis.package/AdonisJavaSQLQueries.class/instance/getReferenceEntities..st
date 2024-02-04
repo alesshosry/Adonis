@@ -3,7 +3,7 @@ getReferenceEntities: referenceContainer
 
 	| myLiteralString key |
 	"Here I have to extract tables between keys."
-	myLiteralString := referenceContainer at: 'myLiteralString'.
+	myLiteralString := (referenceContainer at: 'myLiteralString') primitiveValue.
 	key := referenceContainer at: 'key'.
 
 	key = 'join'
@@ -17,4 +17,4 @@ getReferenceEntities: referenceContainer
 				                   for: myLiteralString 
 			].
 
-	^ self buildReferenceEntityFor: myLiteralString using: key
+	^ {self buildReferenceEntityFor: key using: myLiteralString }
