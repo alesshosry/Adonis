@@ -2,5 +2,5 @@ as yet unclassified
 getResourceContainers: referenceEntity
 
 	^ self resourceContainers collect: [ :each |
-		each = referenceEntity at: 'elementName' "now here we shoud do some computation"	
+		(referenceEntity at: 'elementName') includesSubstring: ' ', each elementName name, ' '
 	 ]
