@@ -1,1 +1,0 @@
-This class is used internally in the super class, and responsible of parsing queries and constructing all definitions and references.

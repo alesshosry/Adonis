@@ -1,0 +1,4 @@
+accessing
+fastEntities
+
+	^ fastEntities

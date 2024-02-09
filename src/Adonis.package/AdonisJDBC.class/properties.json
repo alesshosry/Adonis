@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"framework"
+		"fastEntities",
+		"resourceContainers"
 	],
 	"name" : "AdonisJDBC",
 	"type" : "normal"
