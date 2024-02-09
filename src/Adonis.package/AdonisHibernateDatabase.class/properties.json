@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "AdonisJavaHibernate",
+	"category" : "Adonis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"resourceContainers"
+	],
+	"name" : "AdonisHibernateDatabase",
+	"type" : "normal"
+}
