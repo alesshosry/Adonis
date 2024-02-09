@@ -1,18 +1,17 @@
 tests
 testDetectForeignEntity 
 
-	| xllDetector  hostEntity foreignEntity |
-	xllDetector := AdonisJavaProperties new.
+	| xllDetector  referenceEntity foreignEntity |
+	xllDetector := AdonisJDBC new.
 	xllDetector fillMainModel: mainModel.
+	xllDetector resourceContainers: ((sqlModel allWithType: FamixSQLTable) collect: [:each | each name ]).
 	
-   hostEntity := ReferenceEntity new
-						elementName: 'user';
-						key: 'getProperty'; 
-						path: (Smalltalk imageDirectory asFileReference / 'demo.properties') asFileReference ;
+   referenceEntity := ReferenceEntity new
+						elementName: 'delete from employees';
+						key: 'delete';  
 						yourself.
 					
-	foreignEntity := xllDetector detectResourceEntity: hostEntity .
+	foreignEntity := xllDetector detectResourceEntities: referenceEntity .
 	
 	self assert: foreignEntity isNotNil.
-	self assert: foreignEntity element class equals: ByteString. 
-	self assert: foreignEntity element value equals: 'student'. 
+	self assert: foreignEntity first element equals: 'employees'. 

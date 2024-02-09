@@ -11,4 +11,4 @@ setUp
 	adonisJDBCTestObject generateFile: 'IncreaseSalariesForDepartment.java' andFillData: (adonisJDBCTestObject increaseSalariesForDepartmentTemplate ).   
 	
 	mainModel := adonisJDBCTestObject generateMooseModelFromJSONFor:adonisJDBCTestObject jsonTemplate.	
-	
+	sqlModel := adonisJDBCTestObject generateFamixSQLModel: adonisJDBCTestObject sqlTemplate.
