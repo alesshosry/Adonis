@@ -3,7 +3,7 @@ testDetectLinksForProps
 
 	|xllDetector aLink |
 	
-	xllDetector := AdonisJDBC new.
+	xllDetector := AdonisJavaSQL new.
 	xllDetector fillMainModel: mainModel. 
 	xllDetector resourceContainers: ((sqlModel allWithType: FamixSQLTable) collect: [:each | each name ]).
 	

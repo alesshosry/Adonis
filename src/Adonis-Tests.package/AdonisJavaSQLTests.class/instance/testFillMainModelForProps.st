@@ -2,7 +2,7 @@ tests
 testFillMainModelForProps
 
 	| xllDetector |
-	xllDetector := AdonisJDBC new.
+	xllDetector := AdonisJavaSQL new.
 	xllDetector fillMainModel: mainModel.
 
 	self assert: xllDetector mainModel isNotNil.

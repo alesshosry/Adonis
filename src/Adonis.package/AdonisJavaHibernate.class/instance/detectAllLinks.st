@@ -7,7 +7,7 @@ detectAllLinks
 	javaHQLDetector mainModel: self mainModel.
 	javaHQLDetector detectAllLinks .
  
-	javaSQLQueriesDetector := AdonisJavaSQLQueries new.
+	javaSQLQueriesDetector := AdonisJavaSQL new.
 	javaSQLQueriesDetector fillMainModel: self mainModel.
 	javaSQLQueriesDetector resourceContainers:( javaHQLDetector detectedLinks collect:[:each | each resourceEntity element name  ]).
 	javaSQLQueriesDetector detectAllLinks.

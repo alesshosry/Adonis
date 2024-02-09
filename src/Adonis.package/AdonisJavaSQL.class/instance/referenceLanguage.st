@@ -1,3 +1,3 @@
 accessing
 referenceLanguage
-	^'SQL'
+	^'Java'

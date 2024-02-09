@@ -1,3 +1,0 @@
-accessing
-referenceLanguage
-	^'SQL'
