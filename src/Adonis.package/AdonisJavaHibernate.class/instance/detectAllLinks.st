@@ -5,7 +5,7 @@ detectAllLinks
 	
 	"1- Between mapping files and Java classes "
 	javaHQLDetector := self detectJavaHQLLinksFor: self mainModel.
-	javaSQLResourceContainers := javaHQLDetector detectedLinks collect:[:each | each resourceEntity element name ].
+	javaSQLResourceContainers := javaHQLDetector detectedLinks collect:[:each | each resourceEntity element  ].
 	
 	"2- Between SQL queries and mapped Java classes"
 	javaSQLQueriesDetector := self detectJavaSQLQueriesFor: self mainModel ofResourceContainers: javaSQLResourceContainers.
