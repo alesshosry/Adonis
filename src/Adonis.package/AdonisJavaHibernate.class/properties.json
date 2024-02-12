@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"sqlModel"
+	],
 	"name" : "AdonisJavaHibernate",
 	"type" : "normal"
 }
