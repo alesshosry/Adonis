@@ -1,0 +1,4 @@
+accessing
+javaHQLLinks
+
+	^ javaHQLLinks
