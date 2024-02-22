@@ -8,8 +8,9 @@
 	"instvars" : [
 		"hibernateDatabaseLinks",
 		"javaHQLLinks",
-		"sqlJavaLinks"
+		"sqlJavaLinks",
+		"mappings"
 	],
-	"name" : "SQLDatabaseAdonisLinksCollector",
+	"name" : "AdonisSQLDatabaseLinksCollector",
 	"type" : "normal"
 }

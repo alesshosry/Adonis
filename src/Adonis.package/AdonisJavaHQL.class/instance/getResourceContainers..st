@@ -5,10 +5,5 @@ getResourceContainers: aReferenceEntity
 	
 	|className|
 	
-	className := aReferenceEntity elementName.
-	
-	(className includesSubstring: '.') ifTrue:  [
-		className := (className splitOn: '.' ) last. 
-	].
-
+	className := self cutClassName: aReferenceEntity elementName.
 	^ (self mainModel allModelClasses select: [ :each | each name = className ]) asOrderedCollection  
