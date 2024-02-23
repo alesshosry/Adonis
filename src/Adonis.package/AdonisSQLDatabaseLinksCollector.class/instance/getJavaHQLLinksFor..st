@@ -2,4 +2,4 @@ as yet unclassified
 getJavaHQLLinksFor: aSQLJavaLink
 
 	^ self javaHQLLinks select: [ :each |
-		  each resourceEntity = aSQLJavaLink resourceEntity ]
+		  each resourceEntity element name = aSQLJavaLink resourceEntity element name ]
