@@ -6,7 +6,7 @@ baseline: spec
 		do: [
 			spec baseline: 'MoTion' with: [ spec repository: 'github://AlessHosry/MoTion:main' ]. 	
 			spec baseline: 'PgMetadata' with: [ spec repository: 'github://AlessHosry/PgMetadata/development' ].
-			spec baseline: 'Carrefour' with: [ spec repository: 'github://moosetechnology/Carrefour:v4' ].	
+			spec baseline: 'Carrefour' with: [ spec repository: 'github://moosetechnology/Carrefour:v5' ].	
 			"spec baseline: 'XMLParser' with: [ spec repository: 'github://pharo-contributions/XML-XMLParser/src' ].	 "
 			spec baseline: 'PostgreSQLParser' with: [ spec repository: 'github://juliendelplanque/PostgreSQLParser' ].
 			spec package: #Adonis.
