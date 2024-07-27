@@ -1,4 +1,4 @@
 accessing
-sqlModel: anObject
+fillSQLModel: anObject
 
 	sqlModel := anObject
