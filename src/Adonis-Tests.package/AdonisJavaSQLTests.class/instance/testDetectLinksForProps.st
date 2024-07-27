@@ -16,6 +16,6 @@ testDetectLinksForProps
 	self assert: aLink referenceEntity isNotNil .
 	self assert: aLink resourceLanguage isNotNil . 
 	self assert: aLink referenceLanguage isNotNil . 
-	self assert: aLink framework isNotNil . 
+	self assert: aLink externalAgent isNotNil . 
 	
 	

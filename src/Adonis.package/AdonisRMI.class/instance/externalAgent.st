@@ -1,4 +1,4 @@
 accessing
-framework
+externalAgent
 
 	^ 'RMI'
