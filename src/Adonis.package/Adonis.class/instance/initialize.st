@@ -2,4 +2,4 @@ initialization
 initialize
 
 	super initialize.
-	self detectedLinks: OrderedCollection new.
+	self detectedExternalDependencies: OrderedCollection new.

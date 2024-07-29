@@ -1,12 +1,12 @@
 private - running
-detectResourceEntity: aHostEntity
+detectResourceEntity: aReferenceEntity
 
 	|  nodes   xmlBinding | 
 	
-	aHostEntity path exists ifFalse: [ ^nil ].
+	aReferenceEntity path exists ifFalse: [ ^nil ].
 
-	nodes := (self parseXMLResourceFile: aHostEntity path).
-	xmlBinding := self getBindingFromXMLNodes: nodes for: aHostEntity elementName.
+	nodes := (self parseXMLResourceFile: aReferenceEntity path).
+	xmlBinding := self getBindingFromXMLNodes: nodes for: aReferenceEntity elementName.
 	"match here with nodes and extract XML elemnt + build definition and return."
 	xmlBinding ifNil: [ ^ nil].
 	

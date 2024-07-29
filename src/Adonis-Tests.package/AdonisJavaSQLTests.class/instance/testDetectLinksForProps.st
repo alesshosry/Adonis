@@ -7,10 +7,10 @@ testDetectLinksForProps
 	xllDetector fillMainModel: mainModel. 
 	xllDetector resourceContainers: ((sqlModel allWithType: FamixSQLTable) collect: [:each | each name ]).
 	
-	xllDetector detectAllLinks.
-	self assert: xllDetector detectedLinks isNotNil.
+	xllDetector detectAllExternalDependencies.
+	self assert: xllDetector detectedExternalDependencies isNotNil.
 	
-	aLink := xllDetector detectedLinks detect: [ :eachLink | eachLink referenceEntity key = 'delete' ] ifNone: [self fail ].
+	aLink := xllDetector detectedExternalDependencies detect: [ :eachLink | eachLink referenceEntity key = 'delete' ] ifNone: [self fail ].
 
 	self assert: aLink resourceEntity isNotNil .
 	self assert: aLink referenceEntity isNotNil .

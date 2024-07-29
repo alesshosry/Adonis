@@ -7,7 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"mainModel",
-		"detectedLinks"
+		"detectedExternalDependencies"
 	],
 	"name" : "Adonis",
 	"type" : "normal"

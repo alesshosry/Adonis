@@ -1,0 +1,4 @@
+accessing
+javaHQLExtDeps
+
+	^ javaHQLLinks

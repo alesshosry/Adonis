@@ -6,10 +6,10 @@ testDetectPropsLanguages
 	xllDetector := AdonisJavaSQL new.
 	xllDetector fillMainModel: mainModel.
 	xllDetector resourceContainers: ((sqlModel allWithType: FamixSQLTable) collect: [:each | each name ]).
-	xllDetector detectAllLinks.
+	xllDetector detectAllExternalDependencies.
 	
-	self assert: xllDetector detectedLinks anyOne resourceLanguage equals: 'SQL'.
-	self assert: xllDetector detectedLinks anyOne referenceLanguage equals: 'Java'.
+	self assert: xllDetector detectedExternalDependencies anyOne resourceLanguage equals: 'SQL'.
+	self assert: xllDetector detectedExternalDependencies anyOne referenceLanguage equals: 'Java'.
 	
 	
 	

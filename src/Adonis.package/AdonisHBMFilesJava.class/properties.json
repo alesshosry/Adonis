@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "AdonisJavaHibernate",
+	"category" : "Adonis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AdonisHBMFilesJava",
+	"type" : "normal"
+}

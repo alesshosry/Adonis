@@ -6,5 +6,5 @@ detectJavaSQLQueriesFor: aModel ofResourceContainers: containers
 	javaSQLQueriesDetector := AdonisJavaSQL new.
 	javaSQLQueriesDetector fillMainModel: aModel.
 	javaSQLQueriesDetector resourceContainers: containers.
-	javaSQLQueriesDetector detectAllLinks.
+	javaSQLQueriesDetector detectAllExternalDependencies.
 	^ javaSQLQueriesDetector.

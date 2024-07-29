@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "AdonisJavaHibernate",
+	"category" : "Adonis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"hibernateDatabaseLinks",
+		"javaHQLLinks",
+		"sqlJavaLinks",
+		"mappings"
+	],
+	"name" : "AdonisHQLDatabaseExtDepsCollector",
+	"type" : "normal"
+}

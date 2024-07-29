@@ -1,4 +1,0 @@
-accessing
-elementName
-
-	^ elementName 
