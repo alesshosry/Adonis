@@ -6,13 +6,12 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"framework",
-		"dependencyLink",
 		"resourceEntity",
 		"resourceLanguage",
 		"referenceEntity",
-		"referenceLanguage"
+		"referenceLanguage",
+		"externalAgent"
 	],
-	"name" : "AdonisLink",
+	"name" : "ExternalDependency",
 	"type" : "normal"
 }
