@@ -1,5 +1,4 @@
 as yet unclassified
-getExternalDependency: hostEntity 
+getExternalDependency: hostEntity
 
-	self subclassResponsibility.
-	
+	self subclassResponsibility 

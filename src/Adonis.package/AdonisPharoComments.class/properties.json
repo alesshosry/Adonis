@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Adonis",
+	"category" : "Adonis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AdonisPharoComments",
+	"type" : "normal"
+}
