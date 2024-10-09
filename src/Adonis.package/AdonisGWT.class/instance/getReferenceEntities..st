@@ -1,7 +1,7 @@
 as yet unclassified
 getReferenceEntities: eachHostContainer 
 	
-	^ self collectBindingsfromJavaClasses collect: [ :aBinding |
+	^ self collectBindingsfromJavaClassesRule collect: [ :aBinding |
 			  self buildReferenceEntityForBinding: aBinding .
 		].
 	 
