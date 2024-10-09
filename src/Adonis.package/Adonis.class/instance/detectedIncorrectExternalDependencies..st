@@ -1,0 +1,4 @@
+accessing
+detectedIncorrectExternalDependencies: anObject
+
+	detectedIncorrectExternalDependencies := anObject

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Adonis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"referenceEntity",
+		"referenceLanguage",
+		"externalAgent"
+	],
+	"name" : "MissingResourceDependency",
+	"type" : "normal"
+}
