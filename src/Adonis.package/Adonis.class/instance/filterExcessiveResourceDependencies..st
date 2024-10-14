@@ -7,12 +7,11 @@ filterExcessiveResourceDependencies: allDependencies
 	filteredDeps := (allDependencies groupedBy: [ :each | each referenceEntity isNil ]) at: true ifAbsent: [ {} ].
 	
 	filteredDeps ifNotEmpty: [  
-			filteredDeps keysAndValuesDo: [ :k :v |  
+			filteredDeps do: [ :each |  
     			excessiveResourceDeps add: (ExcessiveResourceDependency new
-        			resourceEntity: v first resourceEntity;
-        			referenceLanguage: v first referenceLanguage;
-					resourceLanguage: v first resourceLanguage;
-        			externalAgent: v first externalAgent;
+        			resourceEntity: each resourceEntity; 
+					resourceLanguage: each resourceLanguage;
+        			externalAgent: each externalAgent;
         			yourself).
 				].
 		 ].

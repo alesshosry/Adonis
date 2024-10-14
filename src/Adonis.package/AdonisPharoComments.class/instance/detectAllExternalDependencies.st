@@ -5,4 +5,6 @@ detectAllExternalDependencies
 		(self getReferenceEntities: eachHostContainer) collect: [
 			:eachHostEntity |
 			self detectedExternalDependencies add:
-				(self getExternalDependency: eachHostEntity) ] ]
+				(self getExternalDependency: eachHostEntity) ] ].
+		
+	self detectAllIncorrectExternalDependencies.

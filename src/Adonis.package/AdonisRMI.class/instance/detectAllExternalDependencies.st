@@ -6,3 +6,5 @@ detectAllExternalDependencies
 					self detectedExternalDependencies addAll: (self getExternalDependency: eachResourceEntity ).
 				 ]. 
 		].
+	
+	self detectAllIncorrectExternalDependencies.
