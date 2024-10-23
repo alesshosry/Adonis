@@ -1,10 +1,11 @@
 private - running
 detectResourceEntity: aReferenceEntity
 
-	| nodes xmlBinding |
-	aReferenceEntity path exists ifFalse: [ ^ nil ].
+	| nodes xmlBinding xmlPath|
+	xmlPath := self extractXMLPathFromJava: aReferenceEntity path.
+	xmlPath exists ifFalse: [ ^ nil ].
 
-	nodes := self parseXMLResourceFile: aReferenceEntity path.
+	nodes := self parseXMLResourceFile: xmlPath.
 	xmlBinding := self
 		              getBindingFromXMLNodes: nodes
 		              for: aReferenceEntity elementName.

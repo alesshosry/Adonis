@@ -4,7 +4,7 @@ filterMissingResourceDependencies: allDependencies
 	| filteredDeps missingResourceDeps|
 
 	missingResourceDeps := OrderedCollection new.
-	filteredDeps := (allDependencies groupedBy: [ :each | each resourceEntity element isNil ])  at: true ifAbsent: [ {} ].
+	filteredDeps := (allDependencies groupedBy: [ :each | each resourceEntity  isNil ])  at: true ifAbsent: [ {} ].
 	
 	filteredDeps ifNotEmpty: [  
 			filteredDeps do: [ :each |  

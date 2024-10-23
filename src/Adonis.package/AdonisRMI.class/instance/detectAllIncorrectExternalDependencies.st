@@ -6,4 +6,4 @@ detectAllIncorrectExternalDependencies
 	res := OrderedCollection new.
 	res add: (self filterMissingResourceDependencies: self detectedExternalDependencies). 
 	res add: (self filterExcessiveResourceDependencies: self detectedExternalDependencies). 
-	self detectedIncorrectExternalDependencies add: res flattened.
+	self detectedIncorrectExternalDependencies: res flattened.

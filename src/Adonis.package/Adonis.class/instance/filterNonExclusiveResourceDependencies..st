@@ -4,7 +4,7 @@ filterNonExclusiveResourceDependencies: allDependencies
 	| filteredDeps nonExclusiveResourceDeps|
 
 	nonExclusiveResourceDeps := OrderedCollection new.
-	filteredDeps := (allDependencies groupedBy: [ :each | each resourceEntity element  ]) select: [ :each | each size > 1 ].
+	filteredDeps := (allDependencies groupedBy: [ :each | each resourceEntity   ]) select: [ :each | each size > 1 ].
 	
 	filteredDeps ifNotEmpty: [  
 			filteredDeps keysAndValuesDo: [ :k :v |  
