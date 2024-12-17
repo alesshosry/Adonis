@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #BaselineOfAdonis!
+self packageOrganizer ensurePackage: #BaselineOfAdonis withTags: #()!
