@@ -8,7 +8,7 @@ To install Adonis
 ```Smalltalk
 Metacello new
     baseline: 'Adonis';
-    repository: 'github://AuthorRepoName/Adonis:main';
+    repository: 'github://alesshosry/Adonis:main';
     load.
 ``` 
 	
